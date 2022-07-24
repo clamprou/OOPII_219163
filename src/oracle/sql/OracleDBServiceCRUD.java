@@ -40,8 +40,8 @@ public class OracleDBServiceCRUD {
 		try {
 			// DriverManager: The basic service for managing a set of JDBC drivers. //We
 			// connect to a DBMS.
-			db_con_obj = DriverManager.getConnection("jdbc:oracle:thin:@oracle12c.hua.gr:1521:orcl", "IT219163",
-					"Petra123");// Returns a connection to the URL.
+			db_con_obj = DriverManager.getConnection("jdbc:oracle:thin:@oracle12c.hua.gr:1521:orcl", "IT<Arithmos mitrou>",//prepei na ftiakseis Ena table Cities sthn vash ths sxolhs me vpn
+					"Your password");// Returns a connection to the URL.
 			// Attempts to establish a connection to the given database URL. The
 			// DriverManager attempts to select an appropriate driver from the set of
 			// registered JDBC drivers.
@@ -72,7 +72,7 @@ public class OracleDBServiceCRUD {
 		ResultSet rs = db_prep_obj.executeQuery();
 		ArrayList<City> cities = new ArrayList<City>();
 		while (rs.next()) {
-			cities.add(new City(rs.getString("cityName"), new double[] { rs.getDouble("lat"), rs.getFloat("lon") },new int[] { rs.getInt("sea"), rs.getInt("mountain"), rs.getInt("museum"), rs.getInt("cafe"),rs.getInt("restaurant"), rs.getInt("park"), rs.getInt("lake"), rs.getInt("train"),rs.getInt("train"), rs.getInt("metro"), rs.getInt("forest") }));
+			cities.add(new City(rs.getString("CITYNAME"), new double[] { rs.getDouble("LATITUDE"), rs.getFloat("LONGITUDE") },new int[] { rs.getInt("TERMSEA"), rs.getInt("TERMMOUNTAIN"), rs.getInt("TERMMUSEUM"), rs.getInt("TERMCAFE"),rs.getInt("TERMRESTAURANT"), rs.getInt("TERMPARK"), rs.getInt("TERMLAKE"), rs.getInt("TERMTRAIN"), rs.getInt("TERMMETRO"), rs.getInt("TERMFOREST") }));
 		}
 		return cities;
 	}

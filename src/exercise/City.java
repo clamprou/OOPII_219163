@@ -90,7 +90,7 @@ public class City{
 	 * @throws IllegalArgumentException
 	 */
 	public City(String city,String country,JTextPane txtButtonCity,JTextPane txtButtonCountry,FrameUserInfo f) throws IOException, SQLException,UniformInterfaceException,WikipediaNoArcticleException,IllegalArgumentException {
-		String appid = "27ceb339722ca7d7d10a68896574cc91";
+		String appid = "Put your key";
 		City c = City.searchCitySys(city);
 		if(c != null) {
 			this.geodesicVector = c.geodesicVector;

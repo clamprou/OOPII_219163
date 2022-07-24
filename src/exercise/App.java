@@ -26,7 +26,7 @@ public class App {
 		Thread recoverTravellers = new Thread() {
 			public void run() {
 				try {
-					Traveller.recoverTravellers("27ceb339722ca7d7d10a68896574cc91");
+					Traveller.recoverTravellers("Put your key");
 				} catch (JsonParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

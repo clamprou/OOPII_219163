@@ -76,7 +76,7 @@ public static void RetrieveWikipedia(City city,JTextPane txtButtonCity,JTextPane
 	
 	 
 public static void main(String[] args) throws ClientProtocolException, IOException, WikipediaNoArcticleException{
-	//String appid ="27ceb339722ca7d7d10a68896574cc91"; //Your openweathermap id.
+	//String appid ="Put your key"; //Your openweathermap id.
 	//RetrieveOpenWeatherMap("Rome","it",appid);	
 	//RetrieveOpenWeatherMap("Athens","gr",appid);
 	//RetrieveOpenWeatherMap("Corfu","gr",appid);	

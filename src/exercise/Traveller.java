@@ -228,7 +228,7 @@ public abstract class Traveller implements Comparable<Traveller>{
 		String city = scan.next();
 		System.out.print("Give your Country:");
 		String country = scan.next();
-		String appid = "27ceb339722ca7d7d10a68896574cc91";
+		String appid = "Put your key";
 		System.out.print("Give your age:");
 		int age = scan.nextInt();
 		while(age < 16 || age > 115) {
