@@ -9,4 +9,5 @@ Main method App.
 
 ## A City Recomendation App based on predefined User cretiria (using online data from the internet)
 
-![Screenshot_1](https://github.com/clamprou/city-recomendation/assets/79994264/a9450eb1-9247-473d-a611-78e29d75add6)
+
+![Screenshot_2](https://github.com/clamprou/city-recomendation/assets/79994264/5df29357-ab52-44a6-a550-fa4921412b22)
